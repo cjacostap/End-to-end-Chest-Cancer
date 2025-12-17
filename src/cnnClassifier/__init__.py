@@ -2,7 +2,10 @@ import os
 import sys
 import logging
 
-logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
+logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]" # esta estructura se imprime
+# cada vez que se ejecute algo...module corresponde al nombre del script/notebook que se esta
+# ejecutando
+
 
 log_dir = "logs"
 log_filepath = os.path.join(log_dir,"running_logs.log")
