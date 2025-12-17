@@ -13,7 +13,14 @@ import base64
 
 
 @ensure_annotations #decorator
+
 def read_yaml(path_to_yaml: Path) -> ConfigBox: #función relacionada con config/config.yaml
+    # configbox es un diccionario que permite extraer valores usando nombre_dict.key1. En un
+    # diccionario tradicional tocaria algo como nombre_dict['key1']. Para pasar un diccionario
+    # al diccionario especial toca con 
+    # from box import ConfigBox
+    # d2 = ConfigBox(d1)
+
     """reads yaml file and returns
 
     Args:
